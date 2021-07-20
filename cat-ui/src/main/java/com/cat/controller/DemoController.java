@@ -35,7 +35,7 @@ public class DemoController {
         log.info("start ...");
 //        String response = restTemplate.getForObject("http://" + businessAddress + "/business-order", String.class);
         String response = businessOrderService.businessOrder();
-//        Thread.sleep(100);
+        Thread.sleep(100);
         log.info("end ... result : {}", response);
         return response;
 
