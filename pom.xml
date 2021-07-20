@@ -34,6 +34,7 @@
         <mybatis-springboot.version>1.3.2</mybatis-springboot.version>
         <mybatis-plus-springboot.version>3.2.0</mybatis-plus-springboot.version>
         <lombok.version>1.18.8</lombok.version>
+        <skywalking.version>8.3.0</skywalking.version>
     </properties>
 
     <dependencyManagement>
@@ -132,17 +133,17 @@
             <dependency>
                 <groupId>org.apache.skywalking</groupId>
                 <artifactId>apm-toolkit-log4j-2.x</artifactId>
-                <version>8.3.0</version>
+                <version>${skywalking.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.skywalking</groupId>
                 <artifactId>apm-toolkit-trace</artifactId>
-                <version>8.3.0</version>
+                <version>${skywalking.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.skywalking</groupId>
                 <artifactId>apm-toolkit-opentracing</artifactId>
-                <version>8.3.0</version>
+                <version>${skywalking.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
