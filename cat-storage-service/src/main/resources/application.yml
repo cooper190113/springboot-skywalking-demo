@@ -1,6 +1,2 @@
 server:
   port: 8085
-
-spring:
-  application:
-    name: cat-storage-service

@@ -30,7 +30,7 @@ public class DemoController {
 
     @GetMapping("/business-order")
     public String businessOrder() throws InterruptedException {
-        Thread.sleep(2000);
+//        Thread.sleep(2000);
         log.info("business start...");
         String response1 = restTemplate.getForObject("http://" + orderAddress + "/order/create", String.class);
         String response2 = restTemplate.getForObject("http://" + storageAddress + "/storage/reduce", String.class);

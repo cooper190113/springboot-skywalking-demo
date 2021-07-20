@@ -1,0 +1,23 @@
+#服务名称
+spring:
+  application:
+    name: cat-storage-service
+  cloud:
+    nacos:
+      #nacos配置中心
+      config:
+        server-addr: 192.168.21.132:8848
+        file-extension: yaml
+      #nacos服务注册中心地址
+      discovery:
+        server-addr: 192.168.21.132:8848
+
+feign:
+  httpclient:
+    enabled: false
+  okhttp:
+    enabled: true
+
+ribbon:
+  ConnectTimeout: 2000
+  ReadTimeout: 5000

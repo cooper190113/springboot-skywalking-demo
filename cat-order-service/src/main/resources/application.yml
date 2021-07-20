@@ -2,8 +2,6 @@ server:
   port: 8084
 
 spring:
-  application:
-    name: cat-order-service
   datasource:
     url: jdbc:mysql://192.168.21.129:3306/cat?useSSL=false&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true
     username: root
