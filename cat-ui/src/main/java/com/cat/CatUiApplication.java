@@ -2,8 +2,8 @@ package com.cat;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.cloud.openfeign.EnableFeignClients;
+//import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+//import org.springframework.cloud.openfeign.EnableFeignClients;
 
 /**
  * @Description: UIApplication
@@ -13,8 +13,8 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
  * https://www.cnblogs.com/chinaWu/p/13575813.html
  * https://www.freesion.com/article/3159467684/
  */
-@EnableFeignClients
-@EnableDiscoveryClient
+//@EnableFeignClients
+//@EnableDiscoveryClient
 @SpringBootApplication
 public class CatUiApplication {
     public static void main(String[] args) {
