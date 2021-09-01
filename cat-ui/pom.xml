@@ -61,6 +61,18 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+        </dependency>
+
+        <dependency>
+            <artifactId>client-java</artifactId>
+            <groupId>io.kubernetes</groupId>
+            <version>9.0.2</version>
+        </dependency>
+
 <!--        <dependency>-->
 <!--            <groupId>org.example</groupId>-->
 <!--            <artifactId>cmri-skywalking-log4j2</artifactId>-->

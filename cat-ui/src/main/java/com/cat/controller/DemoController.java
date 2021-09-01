@@ -1,5 +1,7 @@
 package com.cat.controller;
 
+import cn.hutool.Hutool;
+import cn.hutool.http.HttpUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
@@ -32,7 +34,7 @@ public class DemoController {
     @RequestMapping(value ="/start", produces="application/json;charset=UTF-8")
     public String start() throws InterruptedException {
         log.info("start ...");
-        String response = restTemplate.getForObject("http://" + businessAddress + "/business-order", String.class);
+        String response = HttpUtil.get("cat-business.default.svc.cluster.local:8083/business-order");
 //        String response = businessOrderService.businessOrder();
 //        Thread.sleep(100);
         log.info("end ... result : {}", response);
